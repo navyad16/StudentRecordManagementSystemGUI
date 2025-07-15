@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StudentForm</class>
+ <widget class="QWidget" name="StudentForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Student Record Management</string>
+  </property>
+<layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="formLayout">
+     <item>
+      <layout class="QVBoxLayout" name="nameLayout">
+       <item><widget class="QLabel" name="labelName"><property name="text"><string>Name</string></property></widget></item>
+       <item><widget class="QLineEdit" name="lineEditName"/></item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="rollLayout">
+       <item><widget class="QLabel" name="labelRoll"><property name="text"><string>Roll No</string></property></widget></item>
+       <item><widget class="QLineEdit" name="lineEditRoll"/></item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="branchLayout">
+       <item><widget class="QLabel" name="labelBranch"><property name="text"><string>Branch</string></property></widget></item>
+       <item><widget class="QLineEdit" name="lineEditBranch"/></item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="phoneLayout">
+       <item><widget class="QLabel" name="labelPhone"><property name="text"><string>Phone</string></property></widget></item>
+       <item><widget class="QLineEdit" name="lineEditPhone"/></item>
+      </layout>
+     </item>
+        </layout>
+   </item>
+
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item><widget class="QPushButton" name="btnAdd"><property name="text"><string>Add</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnUpdate"><property name="text"><string>Update</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnDelete"><property name="text"><string>Delete</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnClear"><property name="text"><string>Clear</string></property></widget></item>
+    </layout>
+   </item>
+
+   <item>
+    <widget class="QTableWidget" name="tableStudents">
+     <column>
+      <property name="text"><string>ID</string></property>
+     </column>
+     <column>
+      <property name="text"><string>Name</string></property>
+     </column>
+     <column>
+      <property name="text"><string>Roll No</string></property>
+     </column>
+     <column>
+      <property name="text"><string>Branch</string></property>
+     </column>
+     <column>
+      <property name="text"><string>Phone</string></property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
